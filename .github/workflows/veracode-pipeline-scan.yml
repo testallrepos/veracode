@@ -56,7 +56,7 @@ jobs:
           fail_build: true
 
       - name: Veracode Pipeline Results
-       # if: always() 
+        if: always() 
         uses: veracode/workflow-app-helper@main
        # uses: testallrepos/workflow-app-helper@main
         with:
